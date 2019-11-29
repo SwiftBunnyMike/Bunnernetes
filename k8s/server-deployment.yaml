@@ -13,8 +13,8 @@ spec:
         component: server
     spec:
       containers:
-        - name: server 
-          image: achliopa/multi-server
+        - name: server
+          image: swiftbunnymike/multi-server
           ports:
             - containerPort: 5000
           env:
@@ -31,7 +31,7 @@ spec:
             - name: PGUSER
               value: postgres
             - name: PGPASSWORD
-              valueFrom: 
+              valueFrom:
                 secretKeyRef:
                   name: pgpassword
                   key: PGPASSWORD

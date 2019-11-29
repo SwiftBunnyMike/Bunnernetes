@@ -13,8 +13,8 @@ spec:
         component: worker
     spec:
       containers:
-        - name: worker 
-          image: achliopa/multi-worker
+        - name: worker
+          image: swiftbunnymike/multi-worker
           env:
             - name: REDIS_HOST
               value: redis-cluster-ip-service
